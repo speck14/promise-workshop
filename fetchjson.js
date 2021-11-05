@@ -10,8 +10,8 @@ There are several things you will want to know:
 */
 'use strict'
 
-const http = require('q-io/http');
+const httpq = require('q-io/http');
 
-http.read('http://localhost:1337').then((json) => {
+httpq.read('http://localhost:1337').then((json) => {
   console.log(JSON.parse(json));
 }).catch(err => console.log(err));
